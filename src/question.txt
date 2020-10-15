@@ -1,0 +1,6 @@
+b.) Bei der Konzeption des UML-Diagrams wurde ein Erzeugungsmuster verwendet. Welches? Woran
+erkennen Sie es? Macht es Ihrer Meinung nach Sinn in diesem Kontext?
+
+
+Es wurde das Factory Method Pattern angewandt. Ex macht aus meiner Sicht schon Sinn, da hierdurch die Logik für die Serialisierung in die einzelnen Subkomponente ausgelagert wird.
+Hierdurch können leicht neue Generator hinzugefügt werden.

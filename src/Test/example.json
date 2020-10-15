@@ -1,0 +1,19 @@
+{
+	"Books": [
+		{
+			"author":"Robert C. Martin ",
+			"title":"Clean Code ",
+			"year":"2008 "
+		},
+		{
+			"author":"Christian Ullenboom ",
+			"title":"Java ist auch eine Insel, Version 11 ",
+			"year":"2018 "
+		},
+		{
+			"author":"Erich Gamma, Richard Helm, Ralph E. Johnson,John Vlissides ",
+			"title":"Design Patterns ",
+			"year":"1994 "
+		}
+	]
+}
