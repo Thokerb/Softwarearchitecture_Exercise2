@@ -2,6 +2,7 @@ package BusinessLogic;
 
 import Model.Book;
 import Model.BookListRepresentation;
+import Model.JSONBookList;
 
 import java.util.List;
 
@@ -22,7 +23,9 @@ public class JSONGenerator implements RepresentationGenerator {
         }
         builder.append("\t]\r\n");
         builder.append("}\r\n");
-        return new BookListRepresentation(builder.toString(),books.size());
+        var response = new JSONBookList(books);
+        response.setRepresentation(builder.toString());
+        return response;
     }
 
     private String ToJson(String preTab, Book book){

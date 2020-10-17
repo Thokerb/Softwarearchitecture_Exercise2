@@ -1,4 +1,10 @@
 package Model;
 
-public class HTMLBookList {
+import java.util.List;
+
+public class HTMLBookList extends BookListRepresentation{
+    public HTMLBookList(List<Book> books) {
+        setNumBooks(books.size());
+    }
+
 }

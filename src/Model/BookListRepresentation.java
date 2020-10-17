@@ -1,13 +1,10 @@
 package Model;
 
-public class BookListRepresentation {
+public abstract class BookListRepresentation {
+
     protected String representation;
     private int numBooks;
 
-    public BookListRepresentation(String representation, int numBooks) {
-        this.representation = representation;
-        this.numBooks = numBooks;
-    }
 
     public String getRepresentation(){
         return this.representation;
@@ -16,4 +13,13 @@ public class BookListRepresentation {
     public int getNumBooks() {
         return numBooks;
     }
+
+    public void setNumBooks(int numBooks) {
+        this.numBooks = numBooks;
+    }
+
+    public void setRepresentation(String representation) {
+        this.representation = representation;
+    }
+
 }

@@ -2,6 +2,7 @@ package BusinessLogic;
 
 import Model.Book;
 import Model.BookListRepresentation;
+import Model.HTMLBookList;
 
 import java.util.List;
 
@@ -18,7 +19,9 @@ public class HTMLGenerator implements RepresentationGenerator {
             builder.append("\r\n");
         }
         builder.append("</ul>\r\n");
-        return new BookListRepresentation(builder.toString(),books.size());
+        var response = new HTMLBookList(books);
+        response.setRepresentation(builder.toString());
+        return response;
     }
 
 
