@@ -4,3 +4,6 @@ erkennen Sie es? Macht es Ihrer Meinung nach Sinn in diesem Kontext?
 
 Es wurde das Factory Method Pattern angewandt. Ex macht aus meiner Sicht schon Sinn, da hierdurch die Logik für die Serialisierung in die einzelnen Subkomponente ausgelagert wird.
 Hierdurch können leicht neue Generator hinzugefügt werden.
+
+Nicht sehr sinnvoll finde ich den Constructor in den BookListRepresentations, da meiner Meinung nach die Logik der Erzeugung der Objekte in der Factory passieren sollte und nicht
+in dem Objekt. Auch benötigt das Objekt streng gesehen dann nicht die bücher, sondern soll lediglich die ausgearbeiteten Informationen speichern.
